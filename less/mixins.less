@@ -1,6 +1,6 @@
 // Mixins in here
 
-.btn{
+.btn(@font-size: 1.6rem) {
     height: 4.5rem;
     width: 85%;
     display: flex;
@@ -10,6 +10,7 @@
     border: 1px solid grey;
     border-radius: 15px;
     color: white;
+    font-size: @font-size; 
 }
 
 @mobile: (max-width: 500px);
