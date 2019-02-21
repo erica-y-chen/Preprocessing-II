@@ -372,7 +372,11 @@ header .text-description p {
   border: 1px solid grey;
   border-radius: 15px;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+}
+.home .content-pick .destination .btn p {
+  margin: 0 auto;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
@@ -385,4 +389,32 @@ header .text-description p {
   .home .content-pick .destination .btn p {
     font-size: 1.8rem;
   }
+}
+.form {
+  margin: 0 auto;
+  display: flex;
+  max-width: 800px;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 2rem;
+}
+.form p {
+  width: 25%;
+  padding-left: 2rem;
+  align-self: flex-start;
+}
+.form .input1 {
+  padding: 12px 2px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-right: 1rem;
+  padding-bottom: 1rem;
+}
+.form .input2 {
+  padding: 120px 2px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-right: 1rem;
+  padding-bottom: 1rem;
 }
