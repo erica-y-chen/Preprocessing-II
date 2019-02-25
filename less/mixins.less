@@ -1,1 +1,22 @@
 // Mixins in here
+
+.btn(@font-size: 1.8rem) {
+    height: 4.5rem;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: @button-bg;
+    border: 1px solid grey;
+    border-radius: 15px;
+    color: white;
+    font-size: @font-size; 
+    
+    p{
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+}
+
+@mobile: (max-width: 500px);

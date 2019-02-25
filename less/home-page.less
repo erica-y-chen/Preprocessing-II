@@ -6,16 +6,42 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 90%;
+        justify-self: center;
+        margin: 0 auto;
+        padding-top: 3rem;
+
+        p {
+          font-size: 1.6rem;
+        }
+      }
+
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +52,14 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      width: 90%;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      margin: 0 auto;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -42,6 +76,17 @@
     width: 75%;
     margin: 0 auto 30px;
 
+
+    @media @mobile {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +98,79 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
+
+      @media @mobile {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+      }
+      
+      .btn {
+
+        .btn();
+        
+        @media @mobile {
+          width: 100%;
+          margin: 0 auto;
+          text-align: center;
+          justify-content: center;
+          padding-top: 5px;
+          
+          p{
+            font-size: 1.8rem;
+          }
+        }
+      }
+
+      }
   }
+
+
 }// home
+
+.form {
+  margin: 0 auto;
+  display: flex;
+  max-width: 800px;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 2rem;
+
+
+  p{
+    width: 25%;
+    padding-left: 2rem;
+    align-self: flex-start;
+  }
+
+
+  .input1 {
+    padding: 12px 2px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+
+  .input2 {
+    padding: 120px 2px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+}
